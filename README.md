@@ -30,6 +30,12 @@ Go into firebae, create a project, under projet settings -> service account gene
 ./mvnw spring-boot:run
 `
 
+To deploy in gcp
+`sh
+./mvnw -DskipTests package appengine:deploy
+gcloud app deploy
+`
+
 
 # Full video
 1. [Part 1 - Front end application]([/guides/content/editing-an-existing-page](https://youtu.be/uI4mVtxiwnY))
